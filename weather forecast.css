@@ -1,0 +1,117 @@
+
+    /* Universal selector: applies basic settings to the full page */
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+ 
+    /* Body background uses colour, image pattern, repeat, position, and attachment */
+    body {
+      background-color:pink;
+      background-image: radial-gradient(circle,white 2px, transparent 3px);
+      background-size: 40px 40px;
+      background-repeat: repeat;
+      background-position: top center;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+    }
+ 
+    h1 {
+      font-size: 36px;
+      color: white;
+    }
+
+     h2 {
+      font-size: 24px;
+      color: white;
+    }
+ 
+    .subtitle {
+      font-size: 18px;
+      color: rgb(255, 255, 255);
+    }
+ 
+    .weather-card {
+      width: 400px;
+      border: 3px solid white;
+      border-radius: 30px;
+      background-image: linear-gradient(to bottom right, rgb(128, 0, 128), rgba(255, 192, 248, 0.838));
+        margin: 20px auto;
+    }
+ 
+    .weather-icon {
+      font-size: 70px;
+      animation: floatCloud 3s infinite alternate;
+    }
+     /* CSS animation using @keyframes */
+    @keyframes floatCloud {
+      from {
+        transform: translateY(0);
+      }
+ 
+      to {
+        
+    transform: translateY(20px);
+      }
+    }
+ 
+    #temperature {
+      font-size: 48px;
+      font-weight: bold;
+      color: whitesmoke;
+      animation: pulseTemp 2s infinite;
+    }
+    @keyframes pulseTemp {
+      0% {
+        transform: scale(1);
+        color:rgb(245, 245, 220);
+      }
+      50% {
+        transform: scale(1.2);
+        color:rgba(128, 0, 128, 0.438);
+      }
+      100% {
+        transform: scale(1);
+        color:rgb(245, 245, 220);
+      }
+    }
+ 
+    .details {
+      font-size: 18px;
+      color: white;
+    }
+ 
+    .forecast-section {
+      width: 600px;
+      border: 3px solid white;
+      border-radius: 30px;
+      background-image: linear-gradient(to bottom right, rgb(128, 0, 128), rgba(255, 192, 248, 0.838)); 
+      color: rgb(211, 211, 211);
+      margin: 20px auto;
+    }
+ 
+    .forecast-title {
+      color: black;
+    }
+ 
+    .day {
+      border: 2px solid white;
+      font-size: 17px;
+      color: black;
+    }
+    .forecast-title:hover {
+      background-color:black;
+      color: white;
+      border: 2px white solid;
+      cursor: pointer;
+    }
+ 
+    .day:hover {
+      background-color:black;
+      color: whitesmoke;
+      border: 2px solid white;
+      cursor: pointer;
+    }
+ 
+
