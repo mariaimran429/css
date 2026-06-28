@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MY FOOD MENU</title>
+ 
+  <style>
+    body{
+        font-family:Arial;
+        background:rgb(166, 166, 237);
+        padding:30px;
+        text-align:center;
+        }
+
+       h1{color:blue;}
+
+       /* Sibling Selector-styles the paragraph right after h1*/
+       h1+p {
+        background:white;
+        padding:10px 20px;
+        border-radius:8px;
+        color:blue;
+        display:inline-block;
+       }
+    
+       ul {padding:0; margin-top:20px;}
+    
+       /* Child Selector-styles only direct li children of ul*/
+       ul > li {
+        list-style:none;
+        font-size:18px;
+        font-weight:bold;
+        color:black;
+        padding:10px 20px;
+        margin:6px auto;
+        width:260px;
+        background:cyan;
+        border-radius:8px;
+       }
+
+       /*nth-child-highlights the third item as chefs special*/
+        ul li:nth-child(3) {
+        background:yellow;
+        color:blue;
+        }
+
+       .desc{
+        color:black;
+        margin-top:20px;
+        font-size:15px;
+        max-width:400px;
+        margin-left:auto;
+        margin-right:auto;
+       }
+       /* First-letter---makes the first letter big and bold*/
+       .desc:first-letter{
+        font-size:200%;
+        color:rgb(89, 89, 133);
+        font-weight:bold;
+       }
+
+       .links{margin-top:25px;}
+       /*hover-effect - links glow when mouse moves over them*/
+       a {
+        color:rgb(9, 9, 54);
+        text-decoration:none;
+        font-size:15px;
+        margin:0 12px;
+        padding:8px 18px;
+        border:2px solid blue;
+        border-radius:8px;
+
+       }
+       a:hover {
+        background:cyan;
+        color:white;
+       }
+
+      
+
+  </style>
+
+  </head>
+
+  <body>
+    <h1>MY FOOD MENU</h1>
+    <p>Pick your favourite dish and dig in!</p>
+
+    <ul>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Tacos-Chefs special!</li>
+        <li>Noodles</li>
+        <li>Ice cream</li>
+
+    </ul>
+
+    <p class="desc">Every dish on this menu is made with love and loads of flavor.</p>
+
+    <div class="links">
+        <a href="#">ORDER NOW</a>
+        <a href="#">SEE MORE</a>
+    </div>
+
+  </body>
+
+  </html>
