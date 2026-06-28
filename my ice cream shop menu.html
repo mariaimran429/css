@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Ice Cream Shop Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: light rgba(126, 180, 218, 0.655);
+      text-align: center;
+      color: rgba(0, 0, 255, 0.466);
+    }
+    h1 {
+      color: rgb(16, 39, 55);
+      font-size: 36px;
+    }
+    h1 + p {
+      color: rgba(16, 0, 122, 0.266);
+      font-weight: bold;
+      background-color: white;
+      border-radius: 10px;
+    }
+    .shop-description::first-letter {
+      font-size: 36px;
+      color: rgba(28, 68, 138, 0.266);
+      font-weight: bold;
+    }
+    .menu-box {
+      width: 420px;
+      background-color: white;
+      border: 3px solid blue;
+      border-radius: 15px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    ul {
+      padding: 0;
+    }
+    ul > li {
+      list-style: none;
+      background-color: rgb(107, 141, 143);
+      color: rgb(5, 46, 46);
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px;
+      padding: 12px;
+      border-radius: 10px;
+      border: 2px solid black;
+    }
+    ul > li:nth-child(3) {
+      background-color: rgb(69, 173, 147);
+      color:black ;
+      border: 3px solid blue;
+    }
+    ul > li:hover {
+      background-color: pink;
+      color: white;
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+    button {
+      background-color: rgb(19, 19, 39);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: cyan;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Ice Cream Shop Menu</h1>
+  <p>Velvet Scoops — Creamy Dreams Come True</p>
+  <p class="shop-description">
+    Where Happiness Melts in Your Mouth!
+  </p>
+  <div class="menu-box">
+    <h2>Today's Ice Cream Flavours</h2>
+    <ul>
+      <li>Matcha Cream</li>
+      <li>Sakura Kiss</li>
+      <li>Bingsu Berry Blast - Today's Special</li>
+      <li>Tiramisu Twist</li>
+      <li>Salted Caramel Velvet</li>
+    </ul>
+    <button>Order Now</button>
+  </div>
+</body>
+</html>
