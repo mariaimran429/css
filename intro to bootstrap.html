@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title> my hobby cards </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Step 1 -bootstrap css link-->
+         <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <style>
+          body {
+            background-color:white;
+            font-family: Arial, sans-serif;
+            padding:30px 15px;
+          }
+        
+          h1 {
+            text-align:center;
+            color:rgb(3, 3, 201) ;
+          }
+
+          .hobby-card {
+            text-align:center;
+            border: 2px rgb(4, 4, 163);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color:blue;
+
+          }
+
+          .hobby-card h3 {
+            color:rgb(119, 182, 241);
+          }
+
+
+        </style>
+
+    </head>
+    <body>
+        <h1>MY HOBBY CARDS </h1>
+        <!-- STEP 2 - container keeps the layout neat and centred -->
+        <div class="container">
+            <!-- STEP 3 - row holds all the columns in one horizontal line -->
+        <div class="row">
+            
+
+     <!-- STEP 4 - col-12: full width on phones
+                  col-md-6: half width on tablets
+                  col-lg-4: one-third on desktops -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="hobby-cards">
+            <h3>PAINTING</h3>
+            <p>i love painting the beauty of nature.</p>
+            </div>
+            </div>
+
+             <div class="col-12 col-md-6 col-lg-4">
+            <div class="hobby-card">
+                <h3>BADMINTON</h3>
+                <p>I play badminton with my brother in the evening.</p>
+            </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="hobby-card">>
+                <h3>READING</h3>
+                <p>I love reading books with some interesting plots.</p>
+            </div>
+            </div>
+
+        </div>
+    </div> 
+
+        <!-- STEP 5 - Bootstrap JS script -->
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</script>
+    </body>
+</html>
